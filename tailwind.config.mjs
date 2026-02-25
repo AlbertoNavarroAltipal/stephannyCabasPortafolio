@@ -1,18 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: ['./index.html', './src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
-        primary: '#FF6B6B',
-        secondary: '#4ECDC4',
-        accent: '#FFE66D',
-        dark: '#1A1A2E',
-        purple: '#A855F7',
+        gold: '#C8A55C',
+        'gold-light': '#E8D5A3',
+        'gold-dark': '#9A7B3E',
+        champagne: '#F5E6CC',
+        rose: '#B76E79',
+        dark: {
+          DEFAULT: '#0A0A0A',
+          100: '#1A1A1A',
+          200: '#141414',
+          300: '#0F0F0F',
+        },
+        cream: '#FAF7F2',
+        smoke: '#8A8A8A',
       },
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
-        body: ['Inter', 'sans-serif'],
+        display: ['Cormorant Garamond', 'serif'],
+        body: ['Montserrat', 'sans-serif'],
+      },
+      letterSpacing: {
+        ultra: '0.25em',
+        mega: '0.4em',
       },
     },
   },
